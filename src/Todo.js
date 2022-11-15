@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { addTodo, removeOne, clearTodo } from './features/todoSlice'
 
 function Todo() {
-    const items = useSelector((state) => state.todos.items)
+    const items = useSelector((state) => state.todo.items)
     const dispatch = useDispatch()
     const [input, setInput] = useState('')
 
